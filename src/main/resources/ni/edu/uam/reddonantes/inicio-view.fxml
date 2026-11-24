@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="16.0" styleClass="vista" stylesheets="@css/estilos.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox spacing="6.0" styleClass="tarjeta">
+         <children>
+            <Label styleClass="tarjeta-titulo" text="Sistema de gestión y red de donantes de sangre" />
+            <Label styleClass="tarjeta-texto" text="Registra donantes y campañas, controla las unidades sanguíneas y su vencimiento, y atiende las solicitudes de los hospitales." wrapText="true" />
+         </children>
+         <padding>
+            <Insets bottom="16.0" left="18.0" right="18.0" top="16.0" />
+         </padding>
+      </VBox>
+      <GridPane hgap="12.0" vgap="12.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" percentWidth="33.3" />
+            <ColumnConstraints hgrow="SOMETIMES" percentWidth="33.3" />
+            <ColumnConstraints hgrow="SOMETIMES" percentWidth="33.3" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <VBox spacing="4.0" styleClass="tarjeta">
+               <children>
+                  <Label styleClass="tarjeta-titulo" text="Donantes" />
+                  <Label styleClass="tarjeta-texto" text="Registro, búsqueda y aptitud para donar." wrapText="true" />
+               </children>
+               <padding>
+                  <Insets bottom="14.0" left="16.0" right="16.0" top="14.0" />
+               </padding>
+            </VBox>
+            <VBox spacing="4.0" styleClass="tarjeta" GridPane.columnIndex="1">
+               <children>
+                  <Label styleClass="tarjeta-titulo" text="Donaciones" />
+                  <Label styleClass="tarjeta-texto" text="Registro de cada donación y de las unidades que genera." wrapText="true" />
+               </children>
+               <padding>
+                  <Insets bottom="14.0" left="16.0" right="16.0" top="14.0" />
+               </padding>
+            </VBox>
+            <VBox spacing="4.0" styleClass="tarjeta" GridPane.columnIndex="2">
+               <children>
+                  <Label styleClass="tarjeta-titulo" text="Inventario" />
+                  <Label styleClass="tarjeta-texto" text="Unidades disponibles y control de vencimiento." wrapText="true" />
+               </children>
+               <padding>
+                  <Insets bottom="14.0" left="16.0" right="16.0" top="14.0" />
+               </padding>
+            </VBox>
+            <VBox spacing="4.0" styleClass="tarjeta" GridPane.rowIndex="1">
+               <children>
+                  <Label styleClass="tarjeta-titulo" text="Solicitudes" />
+                  <Label styleClass="tarjeta-texto" text="Pedidos de los hospitales y asignación de unidades compatibles." wrapText="true" />
+               </children>
+               <padding>
+                  <Insets bottom="14.0" left="16.0" right="16.0" top="14.0" />
+               </padding>
+            </VBox>
+            <VBox spacing="4.0" styleClass="tarjeta" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Label styleClass="tarjeta-titulo" text="Campañas" />
+                  <Label styleClass="tarjeta-texto" text="Jornadas de captación por localidad y fecha." wrapText="true" />
+               </children>
+               <padding>
+                  <Insets bottom="14.0" left="16.0" right="16.0" top="14.0" />
+               </padding>
+            </VBox>
+            <VBox spacing="4.0" styleClass="tarjeta" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <Label styleClass="tarjeta-titulo" text="Hospitales" />
+                  <Label styleClass="tarjeta-texto" text="Catálogo de hospitales que solicitan unidades." wrapText="true" />
+               </children>
+               <padding>
+                  <Insets bottom="14.0" left="16.0" right="16.0" top="14.0" />
+               </padding>
+            </VBox>
+         </children>
+      </GridPane>
+      <Label maxWidth="1.7976931348623157E308" styleClass="aviso-pagina" text="Las reglas de compatibilidad y aptitud son una simulación académica. El sistema no sustituye las decisiones del personal médico." wrapText="true">
+         <padding>
+            <Insets bottom="10.0" left="14.0" right="14.0" top="10.0" />
+         </padding>
+      </Label>
+   </children>
+   <padding>
+      <Insets bottom="24.0" left="24.0" right="24.0" top="8.0" />
+   </padding>
+</VBox>

@@ -1,0 +1,250 @@
+/* Identidad visual (D4): los colores del sistema solo se cambian aquí.
+   .ventana y .vista repiten las variables para que Scene Builder las muestre
+   al abrir cada FXML por separado. */
+.root, .ventana, .vista {
+    -rd-acento: #B0161E;
+    -rd-lateral: #1E222B;
+    -rd-lateral-texto: #C9CED8;
+    -rd-lateral-activo: #2C313C;
+    -rd-lateral-pie: #8D94A2;
+    -rd-fondo: #F4F5F7;
+    -rd-tarjeta: #FFFFFF;
+    -rd-texto: #1C2230;
+    -rd-texto-suave: #667085;
+    -rd-borde: #E1E4EA;
+    -rd-exito: #1C7448;
+    -rd-exito-fondo: #E3F3EA;
+    -rd-aviso: #9A5B0C;
+    -rd-aviso-fondo: #FCEFD8;
+    -rd-error: #B3261E;
+    -rd-error-fondo: #FCE4E2;
+
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 13px;
+    -fx-focus-color: -rd-acento;
+    -fx-faint-focus-color: transparent;
+}
+
+/* Barra lateral */
+.lateral {
+    -fx-background-color: -rd-lateral;
+}
+
+.gota {
+    -fx-background-color: -rd-acento;
+    -fx-shape: "M8 0 C8 0 0 9 0 14 A8 8 0 0 0 16 14 C16 9 8 0 8 0 Z";
+}
+
+.marca-nombre {
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.nav {
+    -fx-background-color: transparent;
+    -fx-background-radius: 6;
+    -fx-text-fill: -rd-lateral-texto;
+    -fx-cursor: hand;
+}
+
+.nav:hover {
+    -fx-background-color: derive(-rd-lateral, 15%);
+    -fx-text-fill: white;
+}
+
+.nav.activo {
+    -fx-background-color: -rd-lateral-activo;
+    -fx-text-fill: white;
+    -fx-border-color: transparent transparent transparent -rd-acento;
+    -fx-border-width: 0 0 0 3;
+}
+
+.pie-lateral {
+    -fx-text-fill: -rd-lateral-pie;
+    -fx-font-size: 11px;
+    -fx-border-color: derive(-rd-lateral, 20%) transparent transparent transparent;
+}
+
+/* Encabezado y área de contenido */
+.contenido {
+    -fx-background-color: -rd-fondo;
+}
+
+.titulo {
+    -fx-text-fill: -rd-texto;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.subtitulo {
+    -fx-text-fill: -rd-texto-suave;
+    -fx-font-size: 12px;
+}
+
+/* Tarjetas */
+.tarjeta {
+    -fx-background-color: -rd-tarjeta;
+    -fx-background-radius: 8;
+    -fx-border-color: -rd-borde;
+    -fx-border-radius: 8;
+}
+
+.tarjeta-titulo {
+    -fx-text-fill: -rd-texto;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.tarjeta-texto {
+    -fx-text-fill: -rd-texto-suave;
+}
+
+.tarjeta-numero {
+    -fx-text-fill: -rd-texto;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+/* Botones */
+.boton-primario {
+    -fx-background-color: -rd-acento;
+    -fx-background-radius: 6;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.boton-primario:hover {
+    -fx-background-color: derive(-rd-acento, -12%);
+}
+
+.boton-secundario {
+    -fx-background-color: -rd-tarjeta;
+    -fx-background-radius: 6;
+    -fx-border-color: -rd-borde;
+    -fx-border-radius: 6;
+    -fx-text-fill: -rd-texto;
+    -fx-cursor: hand;
+}
+
+.boton-secundario:hover {
+    -fx-background-color: derive(-rd-fondo, -4%);
+}
+
+.boton-peligro {
+    -fx-background-color: -rd-error;
+    -fx-background-radius: 6;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.boton-peligro:hover {
+    -fx-background-color: derive(-rd-error, -12%);
+}
+
+/* Formularios y filtros */
+.panel-filtros {
+    -fx-background-color: -rd-tarjeta;
+    -fx-background-radius: 8;
+    -fx-border-color: -rd-borde;
+    -fx-border-radius: 8;
+}
+
+.etiqueta-campo {
+    -fx-text-fill: -rd-texto-suave;
+    -fx-font-size: 12px;
+}
+
+.text-field, .combo-box, .date-picker, .text-area {
+    -fx-background-radius: 5;
+}
+
+/* Tablas y estado vacío */
+.table-view {
+    -fx-background-color: -rd-tarjeta;
+    -fx-border-color: -rd-borde;
+}
+
+.table-view .column-header,
+.table-view .filler {
+    -fx-background-color: derive(-rd-fondo, -2%);
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: -rd-texto;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: derive(-rd-acento, 75%);
+}
+
+.table-row-cell:selected .text {
+    -fx-fill: -rd-texto;
+}
+
+.estado-vacio {
+    -fx-text-fill: -rd-texto-suave;
+}
+
+/* Insignias de estado; el relleno va aquí porque también se crean desde código. */
+.insignia {
+    -fx-background-radius: 10;
+    -fx-padding: 1 8 1 8;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.insignia-ok {
+    -fx-background-color: -rd-exito-fondo;
+    -fx-text-fill: -rd-exito;
+}
+
+.insignia-aviso {
+    -fx-background-color: -rd-aviso-fondo;
+    -fx-text-fill: -rd-aviso;
+}
+
+.insignia-error {
+    -fx-background-color: -rd-error-fondo;
+    -fx-text-fill: -rd-error;
+}
+
+.insignia-neutra {
+    -fx-background-color: derive(-rd-fondo, -6%);
+    -fx-text-fill: -rd-texto-suave;
+}
+
+/* Avisos de página */
+.aviso-pagina {
+    -fx-background-color: -rd-aviso-fondo;
+    -fx-background-radius: 6;
+    -fx-border-color: derive(-rd-aviso-fondo, -12%);
+    -fx-border-radius: 6;
+    -fx-text-fill: -rd-aviso;
+}
+
+.aviso-error {
+    -fx-background-color: -rd-error-fondo;
+    -fx-background-radius: 6;
+    -fx-border-color: derive(-rd-error-fondo, -12%);
+    -fx-border-radius: 6;
+    -fx-text-fill: -rd-error;
+}
+
+/* Cada módulo escribe sus estilos solo bajo su encabezado. */
+
+/* Inicio (PR 9) */
+
+/* Donantes (PR 3) */
+
+/* Campañas y hospitales (PR 4) */
+
+/* Donaciones (PR 5) */
+
+/* Inventario (PR 6) */
+
+/* Solicitudes (PR 7) */
+
+/* Candidatos (PR 8) */
