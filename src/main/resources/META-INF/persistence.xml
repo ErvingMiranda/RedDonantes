@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.2">
+
+    <persistence-unit name="redDonantesPU" transaction-type="RESOURCE_LOCAL">
+
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/bd_red_donantes"/>
+            <property name="jakarta.persistence.jdbc.user" value="postgres"/>
+
+            <!-- La contraseña la aporta JPAUtil desde BD_PASSWORD. -->
+
+            <!-- El esquema lo crea sql/01_estructura.sql; Hibernate solo lo valida. -->
+            <property name="hibernate.hbm2ddl.auto" value="validate"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>
