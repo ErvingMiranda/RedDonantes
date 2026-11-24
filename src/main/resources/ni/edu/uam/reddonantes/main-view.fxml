@@ -26,7 +26,7 @@
             <Button fx:id="btnDonaciones" alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#mostrarDonaciones" styleClass="nav" text="Donaciones" />
             <Button fx:id="btnInventario" alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#mostrarInventario" styleClass="nav" text="Inventario" />
             <Button fx:id="btnSolicitudes" alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#mostrarSolicitudes" styleClass="nav" text="Solicitudes" />
-            <Button fx:id="btnCampanas" alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#mostrarCampanas" styleClass="nav" text="Campañas" />
+            <Button fx:id="btnCampanias" alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#mostrarCampanias" styleClass="nav" text="Campañas" />
             <Button fx:id="btnHospitales" alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#mostrarHospitales" styleClass="nav" text="Hospitales" />
             <Region VBox.vgrow="ALWAYS" />
             <Label styleClass="pie-lateral" text="Simulación académica. No sustituye el criterio médico." wrapText="true">

@@ -23,7 +23,7 @@ public class MainController {
     @FXML private Button btnDonaciones;
     @FXML private Button btnInventario;
     @FXML private Button btnSolicitudes;
-    @FXML private Button btnCampanas;
+    @FXML private Button btnCampanias;
     @FXML private Button btnHospitales;
 
     private Button botonActivo;
@@ -61,8 +61,8 @@ public class MainController {
     }
 
     @FXML
-    private void mostrarCampanas() {
-        cargarVista("campanas-view.fxml", "Campañas", btnCampanas);
+    private void mostrarCampanias() {
+        cargarVista("campanias-view.fxml", "Campañas", btnCampanias);
     }
 
     @FXML
