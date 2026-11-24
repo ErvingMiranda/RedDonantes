@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import ni.edu.uam.reddonantes.database.JPAUtil;
 
 import java.io.IOException;
 
@@ -15,5 +16,11 @@ public class RedDonantesApplication extends Application {
         stage.setTitle("Red de Donantes de Sangre - Bienvenida");
         stage.setScene(scene);
         stage.show();
+    }
+
+    @Override
+    public void stop() {
+        // Cierra la fábrica de persistencia al finalizar la aplicación.
+        JPAUtil.cerrar();
     }
 }
